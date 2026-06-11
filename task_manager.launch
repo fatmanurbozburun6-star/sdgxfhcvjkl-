@@ -1,0 +1,11 @@
+<launch>
+    <param name="locations" type="yaml" value="['INFORMATION_DESK', 'SCIENCE_SECTION', 'NOVEL_SECTION', 'CHECKOUT_AREA']" />
+    
+    <param name="INFORMATION_DESK" type="yaml" value="{'goal': {'x': 2.308, 'y': 8.083, 'yaw': -0.044}}" />
+    <param name="SCIENCE_SECTION" type="yaml" value="{'goal': {'x': -1.083, 'y': 4.565, 'yaw': 2.822}}" />
+    <param name="NOVEL_SECTION" type="yaml" value="{'goal': {'x': -0.046, 'y': -3.303, 'yaw': -1.104}}" />
+    <param name="CHECKOUT_AREA" type="yaml" value="{'goal': {'x': -7.304, 'y': 0.369, 'yaw': 2.804}}" />
+
+    <node pkg="service_robot_project" type="qr_reader.py" name="qr_reader_node" output="screen" />
+    <node pkg="service_robot_project" type="task_manager.py" name="task_manager_node" output="screen" />
+</launch>
