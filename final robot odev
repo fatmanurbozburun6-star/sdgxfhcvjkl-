@@ -1,0 +1,10 @@
+map.pgm
+map.yaml
+map.yaml.save
+mission.yaml
+odev.yaml
+package.xml
+qr_reader.py
+slam_mapping.launch
+task_manager.launch
+task_manager.py
